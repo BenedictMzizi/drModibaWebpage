@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dr HM Modiba-Mlaza | General Practitioner</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
+
   <script>
     tailwind.config = {
       theme: {
@@ -17,181 +19,225 @@
       }
     }
   </script>
+
+  <style>
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: all 0.8s ease;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
+
 <body class="bg-gray-50 text-gray-800">
 
-  <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/27602453185?text=Hello%20Dr%20HM%20Modiba-Mlaza%20Practice,%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" class="fixed bottom-6 right-6 bg-green-600 text-white px-5 py-3 rounded-full shadow-lg hover:bg-green-700 transition-all z-50">Book via WhatsApp</a>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/27602453185?text=Hello%20Dr%20HM%20Modiba-Mlaza%20Practice,%20I%20would%20like%20to%20make%20an%20enquiry."
+   target="_blank"
+   class="fixed bottom-6 right-6 bg-green-600 text-white px-5 py-3 rounded-full shadow-lg hover:bg-green-700 transition-all z-50">
+  Book via WhatsApp
+</a>
 
-  <!-- HEADER -->
-  <header class="bg-white shadow-sm">
-    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-      <div class="flex items-center space-x-4">
-        <img src="images/Logo.png" alt="Dr HM Modiba-Mlaza Logo" class="h-16 w-auto" />
-        <!-- Optional text next to logo -->
-        <div>
-          <h1 class="text-2xl font-bold text-brandGreen">Dr HM Modiba-Mlaza</h1>
-          <p class="text-sm text-gray-600">General Practitioner (MBChB)</p>
-        </div>
-      </div>
-      <nav class="hidden md:flex space-x-8 font-medium">
-        <a href="#services" class="hover:text-brandGreen">Services</a>
-        <a href="#about" class="hover:text-brandGreen">About</a>
-        <a href="#booking" class="hover:text-brandGreen">Bookings</a>
-        <a href="#contact" class="hover:text-brandGreen">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="bg-brandGreen text-white">
-    <div class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
+<!-- HEADER -->
+<header class="bg-white shadow-sm">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+    <div class="flex items-center space-x-4">
+      <img src="images/Logo.png" alt="Dr HM Modiba-Mlaza Logo" class="h-16 w-auto" />
       <div>
-        <span class="inline-block bg-white text-brandGreen px-4 py-1 rounded-full text-sm mb-4">Walk-ins Welcome</span>
-        <h2 class="text-4xl md:text-5xl font-bold mb-6">Good Health is<br/>Great Health</h2>
-        <p class="text-lg mb-8">Compassionate, professional medical care for individuals and families in a safe and welcoming environment.</p>
-        <div class="flex flex-wrap gap-4">
-          <a href="#booking" class="bg-white text-brandGreen px-6 py-3 rounded-full font-semibold">Book via WhatsApp</a>
-          <a href="#services" class="border border-white px-6 py-3 rounded-full font-semibold">View Services</a>
-        </div>
-      </div>
-      <div class="flex justify-center">
-        <div class="w-80 h-80 bg-white/20 rounded-2xl flex items-center justify-center text-center">
-        <img 
-           src="images/drM.jpg" 
-           alt="Dr HM Modiba-Mlaza" 
-          class="w-full h-full object-cover"
-        />
-        </div>
+        <h1 class="text-2xl font-bold text-brandGreen">Dr HM Modiba-Mlaza</h1>
+        <p class="text-sm text-gray-600">General Practitioner (MBChB)</p>
       </div>
     </div>
-  </section>
+    <nav class="hidden md:flex space-x-8 font-medium">
+      <a href="#doctor" class="hover:text-brandGreen">Meet the Doctor</a>
+      <a href="#services" class="hover:text-brandGreen">Services</a>
+      <a href="#booking" class="hover:text-brandGreen">Bookings</a>
+      <a href="#contact" class="hover:text-brandGreen">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <!-- TRUST BADGES -->
-  <section class="bg-white py-10">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-6 text-center">
-      <div class="bg-gray-100 p-6 rounded-xl">Medical Aids Accepted</div>
-      <div class="bg-gray-100 p-6 rounded-xl">Walk-ins & Appointments</div>
-      <div class="bg-gray-100 p-6 rounded-xl">Professional & Compassionate Care</div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section id="services" class="py-24">
-    <div class="max-w-7xl mx-auto px-6">
-      <h3 class="text-3xl font-bold text-center mb-16">Our Services</h3>
-      <div class="grid md:grid-cols-4 gap-8">
-
-        <div class="bg-white p-6 rounded-xl shadow text-center flex flex-col items-center gap-4">
-          <img src="images/checkUp.jfif" alt="General Check-Ups" class="w-20 h-20 object-cover rounded-full mx-auto" />
-          <div>General Check-Ups</div>
-        </div>
-
-        <div class="bg-white p-6 rounded-xl shadow text-center flex flex-col items-center gap-4">
-          <img src="images/acute.jfif" alt="Acute & Chronic Ailments" class="w-20 h-20 object-cover rounded-full mx-auto" />
-          <div>Acute & Chronic Ailments</div>
-        </div>
-
-        <div class="bg-white p-6 rounded-xl shadow text-center flex flex-col items-center gap-4">
-          <img src="images/familyPlanning.jfif" alt="Family Planning" class="w-20 h-20 object-cover rounded-full mx-auto" />
-          <div>Family Planning</div>
-        </div>
-
-        <div class="bg-white p-6 rounded-xl shadow text-center flex flex-col items-center gap-4">
-          <img src="images/paapSm.jfif" alt="Pap Smears" class="w-20 h-20 object-cover rounded-full mx-auto" />
-          <div>Pap Smears</div>
-        </div>
-
-        <div class="bg-white p-6 rounded-xl shadow text-center flex flex-col items-center gap-4">
-          <img src="images/ultra.jfif" alt="Antenatal Ultrasound" class="w-20 h-20 object-cover rounded-full mx-auto" />
-          <div>Antenatal Ultrasound</div>
-        </div>
-
-        <div class="bg-white p-6 rounded-xl shadow text-center flex flex-col items-center gap-4">
-          <img src="images/chronic.jfif" alt="Acute Pain Management" class="w-20 h-20 object-cover rounded-full mx-auto" />
-          <div>Acute Pain Management</div>
-        </div>
-
-        <div class="bg-white p-6 rounded-xl shadow text-center flex flex-col items-center gap-4">
-          <img src="images/iv2.jpg" alt="IV Clinic" class="w-20 h-20 object-cover rounded-full mx-auto" />
-          <div>IV Clinic</div>
-        </div>
-
-        <div class="bg-white p-6 rounded-xl shadow text-center flex flex-col items-center gap-4">
-          <img src="images/Flu.jpg" alt="Flu Vaccines" class="w-20 h-20 object-cover rounded-full mx-auto" />
-          <div>Flu Vaccines</div>
-        </div>
-
+<!-- HERO -->
+<section class="bg-brandGreen text-white">
+  <div class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <span class="inline-block bg-white text-brandGreen px-4 py-1 rounded-full text-sm mb-4">
+        Walk-ins Welcome
+      </span>
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">
+        Good Health is<br />Great Health
+      </h2>
+      <p class="text-lg mb-8">
+        Compassionate, professional medical care for individuals and families in a safe and welcoming environment.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#booking" class="bg-white text-brandGreen px-6 py-3 rounded-full font-semibold">
+          Book via WhatsApp
+        </a>
+        <a href="#services" class="border border-white px-6 py-3 rounded-full font-semibold">
+          View Services
+        </a>
       </div>
     </div>
-  </section>
-
-  <!-- BOOKING -->
-  <section id="booking" class="bg-gray-100 py-24">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h3 class="text-3xl font-bold mb-4">Bookings & Walk-ins</h3>
-      <p class="mb-10 text-gray-600">Walk-ins are welcome. Bookings are recommended for antenatal ultrasound, IV therapy, and specialised services.</p>
-
-      <div class="bg-white p-8 rounded-2xl shadow max-w-xl mx-auto">
-        <form id="whatsappForm" class="space-y-4">
-          <input type="text" id="name" placeholder="Full Name" class="w-full p-3 border rounded" required />
-          <input type="tel" id="phone" placeholder="Contact Number" class="w-full p-3 border rounded" required />
-          <textarea id="reason" placeholder="Reason for Visit" class="w-full p-3 border rounded" required></textarea>
-          <button type="submit" class="w-full bg-brandGreen text-white py-3 rounded-full font-semibold">Book via WhatsApp</button>
-        </form>
-      </div>
+    <div class="flex justify-center">
+      <img src="images/drM.jpg"
+           alt="Dr HM Modiba-Mlaza"
+           class="w-80 h-80 object-cover rounded-2xl shadow-xl" />
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- LOCATION -->
-  <section id="contact" class="py-24">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+<!-- TRUST BADGES -->
+<section class="bg-white py-10">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-6 text-center">
+    <div class="bg-gray-100 p-6 rounded-xl">Medical Aids Accepted</div>
+    <div class="bg-gray-100 p-6 rounded-xl">Walk-ins & Appointments</div>
+    <div class="bg-gray-100 p-6 rounded-xl">Professional & Compassionate Care</div>
+  </div>
+</section>
+
+<!-- MEET THE DOCTOR -->
+<section id="doctor" class="py-24 bg-white reveal">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+    <div>
+      <h3 class="text-3xl font-bold mb-6">Meet the Doctor</h3>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        Dr HM Modiba-Mlaza is a General Practitioner registered with the Health
+        Professions Council of South Africa (HPCSA). The practice provides
+        comprehensive primary healthcare services in accordance with South African
+        medical regulations and ethical standards.
+      </p>
+      <p class="text-gray-700 leading-relaxed">
+        All consultations, diagnoses, and treatments are conducted following
+        appropriate clinical assessment and informed patient consent.
+      </p>
+    </div>
+
+    <div class="relative border-l-2 border-brandGreen pl-8 space-y-8">
       <div>
-        <h3 class="text-3xl font-bold mb-6">Visit the Practice</h3>
-        <p class="mb-4">Ext 1, 84 Bellairs drive Mulbarton, Glenvista, 2190</p>
-        <p class="mb-2">Monday – Friday: 08:00 – 17:00</p>
-        <p class="mb-2">Saturday: 09:00 – 13:00</p>
-        <p class="mb-6">Sunday & Public Holidays: Closed</p>
-        <div class="bg-brandRed text-white p-4 rounded-xl">After hours, please proceed to the nearest hospital emergency unit.</div>
+        <span class="absolute -left-[10px] w-5 h-5 bg-brandGreen rounded-full"></span>
+        <h4 class="font-semibold text-lg">MBChB – Bachelor of Medicine & Surgery</h4>
+        <p class="text-sm text-gray-600">University of the Witwatersrand (WITS)</p>
+        <p class="text-sm text-gray-500">Year of Graduation: 20XX</p>
       </div>
-      <div class="w-full h-80 rounded-2xl overflow-hidden bg-gray-200">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!4v1768748011172!6m8!1m7!1s3esTFICcJ3C1lOPsmCzSyg!2m2!1d-26.28648865038518!2d28.05708908240321!3f189!4f0!5f0.7820865974627469"
-          width="100%"
-          height="100%"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+      <div>
+        <span class="absolute -left-[10px] w-5 h-5 bg-brandGreen rounded-full"></span>
+        <h4 class="font-semibold text-lg">HPCSA Registration</h4>
+        <p class="text-sm text-gray-600">Registered Medical Practitioner</p>
+      </div>
+      <div>
+        <span class="absolute -left-[10px] w-5 h-5 bg-brandGreen rounded-full"></span>
+        <h4 class="font-semibold text-lg">Clinical Interests</h4>
+        <p class="text-sm text-gray-600">
+          Primary healthcare, women’s health, preventive medicine, acute and chronic care.
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer class="bg-gray-900 text-gray-300 py-10 text-sm">
-    <div class="max-w-7xl mx-auto px-6 text-center space-y-4">
-      <p>Phone: 060 245 3185 | 066 219 8714</p>
-      <p>This practice complies with the Protection of Personal Information Act (POPIA).</p>
-      <p>&copy; 2026 Dr HM Modiba-Mlaza. All rights reserved.</p>
+<!-- SERVICES -->
+<section id="services" class="py-24 reveal">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-16">Our Services</h3>
+    <div class="grid md:grid-cols-4 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <img src="images/checkUp.jfif" class="w-20 h-20 rounded-full mx-auto mb-4">
+        General Check-Ups
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <img src="images/acute.jfif" class="w-20 h-20 rounded-full mx-auto mb-4">
+        Acute & Chronic Ailments
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <img src="images/familyPlanning.jfif" class="w-20 h-20 rounded-full mx-auto mb-4">
+        Family Planning
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <img src="images/paapSm.jfif" class="w-20 h-20 rounded-full mx-auto mb-4">
+        Pap Smears
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <img src="images/ultra.jfif" class="w-20 h-20 rounded-full mx-auto mb-4">
+        Antenatal Ultrasound
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <img src="images/chronic.jfif" class="w-20 h-20 rounded-full mx-auto mb-4">
+        Acute Pain Management
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <img src="images/iv2.jpg" class="w-20 h-20 rounded-full mx-auto mb-4">
+        IV Clinic
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <img src="images/Flu.jpg" class="w-20 h-20 rounded-full mx-auto mb-4">
+        Flu Vaccines
+      </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <!-- WHATSAPP SCRIPT -->
-  <script>
-    document.getElementById('whatsappForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const phone = document.getElementById('phone').value.trim();
-      const reason = document.getElementById('reason').value.trim();
+<!-- BOOKING -->
+<section id="booking" class="bg-gray-100 py-24">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold mb-4">Bookings & Walk-ins</h3>
+    <p class="mb-10 text-gray-600">
+      Walk-ins are welcome. Bookings are recommended for specialised services.
+    </p>
+    <form id="whatsappForm" class="bg-white p-8 rounded-2xl shadow max-w-xl mx-auto space-y-4">
+      <input required id="name" class="w-full p-3 border rounded" placeholder="Full Name">
+      <input required id="phone" class="w-full p-3 border rounded" placeholder="Contact Number">
+      <textarea required id="reason" class="w-full p-3 border rounded" placeholder="Reason for Visit"></textarea>
+      <button class="w-full bg-brandGreen text-white py-3 rounded-full font-semibold">
+        Book via WhatsApp
+      </button>
+    </form>
+  </div>
+</section>
 
-      const message = `Appointment Request\n\nName: ${name}\nContact: ${phone}\nReason: ${reason}`;
-      const encodedMessage = encodeURIComponent(message);
+<!-- CONTACT -->
+<section id="contact" class="py-24">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+    <div>
+      <h3 class="text-3xl font-bold mb-6">Visit the Practice</h3>
+      <p>Ext 1, 84 Bellairs Drive, Mulbarton, Glenvista, 2190</p>
+      <p>Mon–Fri: 08:00–17:00 | Sat: 09:00–13:00</p>
+      <div class="bg-brandRed text-white p-4 rounded-xl mt-6">
+        After hours, please proceed to the nearest emergency unit.
+      </div>
+    </div>
+    <iframe class="w-full h-80 rounded-xl"
+      src="https://www.google.com/maps/embed?pb=!4v1768748011172!6m8!1m7!1s3esTFICcJ3C1lOPsmCzSyg!2m2!1d-26.28648865038518!2d28.05708908240321!3f189!4f0!5f0.7820865974627469"
+      loading="lazy"></iframe>
+  </div>
+</section>
 
-      window.open(`https://wa.me/27602453185?text=${encodedMessage}`, '_blank');
-    });
-  </script>
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-300 py-10 text-center text-sm">
+  <p>Phone: 060 245 3185 | 066 219 8714</p>
+  <p>This practice complies with POPIA.</p>
+  <p>&copy; 2026 Dr HM Modiba-Mlaza</p>
+</footer>
+
+<script>
+  document.getElementById('whatsappForm').addEventListener('submit', e => {
+    e.preventDefault();
+    const msg = encodeURIComponent(
+      `Appointment Request\nName: ${name.value}\nContact: ${phone.value}\nReason: ${reason.value}`
+    );
+    window.open(`https://wa.me/27602453185?text=${msg}`, '_blank');
+  });
+
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => entry.isIntersecting && entry.target.classList.add('active'));
+  }, { threshold: 0.2 });
+  reveals.forEach(r => observer.observe(r));
+</script>
 
 </body>
 </html>
-
